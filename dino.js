@@ -55,13 +55,14 @@ function createCactus(){
            background.removeChild(cactus);     
         }else if (cactusPosition > 0 && cactusPosition < 80 && position < 60){
             //Game Over
+            
             clearInterval(leftInterval);
             document.body.innerHTML = '<input type="button" value="Jogar novamente" class="game-over" onClick="window.location.reload()">'
             
             
             let audio = new Audio('../audios/game-over.wav');
             audio.addEventListener('canplaythrough', function() {
-            audio.play();              
+            //audio.play(;              
             
 });
         }else{        
